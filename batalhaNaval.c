@@ -10,6 +10,51 @@ int main() {
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
 
+    int tabuleiro[9][9] = 
+    {
+    {1,0,0,0,0,0,0,0,0,0,0},
+    {2,0,0,3,0,0,0,0,0,0,0},
+    {3,0,0,3,0,0,0,0,0,0,0},
+    {4,0,0,3,0,0,0,0,0,0,0},
+    {5,0,0,0,0,0,0,0,0,0,0},
+    {6,0,0,0,0,0,0,0,0,0,0},
+    {7,0,0,0,0,0,0,0,0,0,0},
+    {8,0,0,3,3,3,0,0,0,0,0},
+    {9,0,0,0,0,0,0,0,0,0,0},
+    };
+    
+    char letras;
+    
+    printf("Tabuleiro de Batalha Naval!\n");
+    printf("   ");
+    for (int lin = 0; lin <= 0; lin++) // Este FOR serve para a qauntidades de linhas das letras
+    {
+        letras = 'A';
+       for (int h = 0; h <= 7; h++)   // quantidades de letras
+       {
+        printf("%c ", letras);
+        letras++;
+       }
+       
+    }
+    printf("\n");
+    
+    for (int j = 0; j <= 8; j++) // Quantidades de linhas 
+    {
+    for (int i = 0; i <= 8; i++) // Quantidades de colunas
+    {
+        printf(" %d", tabuleiro[j][i]);
+    }
+    printf("\n");
+    }
+    
+    printf("Nomeclatura das coordenadas:\n");
+    printf("Coordenadas que começam com um numero: Horizontal\n");
+    printf("Coordenadas que começam com um caractere: Vertical\n");
+    printf("Seu návio se encontra na coordenada: %dCDE \n", tabuleiro[7][0]);
+    printf("O návio Inimigo se encontra na coordenada: C234 \n");
+    
+
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
     // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
     // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
